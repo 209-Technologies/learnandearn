@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{ app_name }}</title>
+</head>
+<body>
+    {% for dashboard_card in dashboard_cards %}
+        <h3>{{ dashboard_card.name }}</h3>
+        <span>{{ dashboard_card.description }}</span>
+        <span>{{ dashboard_card.count }}</span>
+    {% endfor%}
+    <br/>
+
+</body>
+</html>
